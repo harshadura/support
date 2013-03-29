@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" > 
+
+    <ScrollView
+        android:id="@+id/sv_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingRight="?android:attr/scrollbarSize" >
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_credits"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_credits"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingRight="?android:attr/scrollbarSize" >
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_license"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_inf12"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingRight="?android:attr/scrollbarSize" >
+
+            <TextView
+                android:id="@+id/TextView011"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit your feature requests/comments below" />
+
+            <EditText
+                android:id="@+id/txtIdea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/TextView022"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btSubmit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_hello"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical" >
+
+        <Button
+            android:id="@+id/btApprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate to this App Developers" />
+    </ScrollView>
+
+</FrameLayout>
